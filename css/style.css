@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #333;
+	font: 18px 'Open Sans', Arial, sans-serif;
+}
+
+.container {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header {
+	min-height: 90vh;
+	padding-top: 250px;
+	padding-bottom: 250px;
+	background: url('header.jpg') center/cover no-repeat;
+}
+
+.nav {
+	position: sticky;
+	top: 0;
+	line-height: 10vh;
+	background: #4b78a0;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.nav li {
+	width: 100%;
+}
+
+.nav a {
+	display: block;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav a:hover, .nav a:focus {
+	background: #375875;
+}
+
+.section {
+	background: #66CCFF;
+	padding: 30px 0;
+}
+
+.section:nth-of-type(even) {
+	background: #55BBEE;
+}
+
+.section *:not (:first-child ){
+	margin-top: 30px;
+}
+
+#contactText{
+	width: 50%;
+	float: left;
+	text-align: justify;
+}
+
+#clear{
+	clear: both;
+}
+
+#contactForm {
+	text-align: center;
+	width: 50%;
+ 	margin: 0 auto;
+	float: left; 	
+	border-radius: 10px;
+	padding: 20px;	
+}
+
+#contactForm label {
+	display:block;
+	margin-bottom:5px;
+	margin-top:5px;
+	font-weight:bold;
+	text-transform: uppercase; 
+	font-size:12px;
+	color:#555555;
+	
+}
+
+#contactForm textarea, #contactForm input {
+	margin-left: 10%;
+	padding:5px;
+	padding-left:30px;
+	border-radius:3px;
+	border:1px solid #ccc;
+	margin-bottom:25px;
+	width:80%;
+}
+
+.contactFormName{
+    background-image: url('user.png');
+    background-repeat: no-repeat;
+}
+
+.contactFormEmail{
+    background-image: url('mail.png');
+    background-repeat: no-repeat;
+    background-position: 2px;
+}
+
+.contactFormMessage{
+    background-image: url('message.png');
+    background-repeat: no-repeat;
+	background-position: 2px 2px;
+	min-height: 80px;
+}
+
+
+#contactForm textarea:focus, #contactForm input:focus {
+    border: 3px solid #555;
+}
+
+
+#contactForm input#submit{
+	width:80%;
+	cursor:pointer;
+	margin-bottom:0px;
+}
+
+.footer {
+	background: #66CCFF;
+	padding: 30px;
+	text-align: center;
+}
